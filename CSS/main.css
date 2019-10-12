@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+.aa-container{
+    width: 1220;
+    margin: 30px auto 0;
+}
+.aa-grid > [class*="aa-width-"]{
+    margin-left: 20px;
+}
+.aa-grid{
+    display: flex;
+    margin-left: -20px;
+}
+.aa-grid+.aa-grid{
+    margin-top: 20px;
+}
+.aa-width-600-150{
+    height: 150px;
+    width: 600px;
+}
+.aa-width-600-320{
+    height: 320px;
+    width: 600px;
+}
