@@ -1,25 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900&display=swap');
+@import url('../CSS/normalize.css');
+
 body{
-    margin: 0;
+  margin: 0;
+  font-family: Raleway, sans-serif;
 }
-.aa-container{
-    width: 1220;
-    margin: 30px auto 0;
+.aa-content{
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 300;
+  width: 24%;
 }
-.aa-grid > [class*="aa-width-"]{
-    margin-left: 20px;
+.aa-content_header{
+  position: absolute;
+  top:36%;
+  left: 8%;
 }
-.aa-grid{
-    display: flex;
-    margin-left: -20px;
+.aa-h1header{
+  font-size: 60px;
+  font-weight: 900;
+  width: 290px;
 }
-.aa-grid+.aa-grid{
-    margin-top: 20px;
+.aa-head{
+  height: 1000px;
+  margin-bottom: -15px;
+  background-image: url('../IMG/headimg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f9f8fb;
+  position: relative;
 }
-.aa-width-600-150{
-    height: 150px;
-    width: 600px;
+.aa-head_logo{
+  position: absolute;
+  top: 8%;
+  left: 8%;
 }
-.aa-width-600-320{
-    height: 320px;
-    width: 600px;
+.aa-headnav{
+  position: absolute;
+  top: 9.5%;
+  right: 8%;
+}
+.aa-link{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  padding-top: 10px;
+  box-sizing: border-box;
+  margin-right: 30px;
+}
+.aa-link:hover{
+  border-top: 2px solid #ff6033;
+  padding-top: 8px;
+}
+.aa-button{
+  height: 55px;  
+  width: 200px;
+  background-color: #ff6033;
+  font-size: 20px;
+  color: white;
+  outline: none;
+  margin-top: 5%;
+}
+.aa-head-scroll{
+  position: absolute;
+  bottom: 4%;
+  left: 49%;
+}
+.aa-section1{
+  height: 700px;
+  background-color:#00b2b2 ;
+  display: flex;
 }
