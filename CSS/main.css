@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900&display=swap');
+
 @import url('../CSS/normalize.css');
+
+
 
 body{
   margin: 0;
@@ -9,7 +12,17 @@ body{
   font-size: 17px;
   line-height: 27px;
   font-weight: 300;
-  width: 24%;
+  width: 35%;
+}
+.aa-h1{
+  font-size: 80px;
+  font-weight: 700;
+}
+.aa-content_color{
+  color: white;
+}
+.aa-content_headwidth{
+  width: 29%;
 }
 .aa-content_header{
   position: absolute;
@@ -22,7 +35,7 @@ body{
   width: 290px;
 }
 .aa-head{
-  height: 1000px;
+  height: 900px;
   margin-bottom: -15px;
   background-image: url('../IMG/headimg.jpg');
   background-repeat: no-repeat;
@@ -35,10 +48,24 @@ body{
   top: 8%;
   left: 8%;
 }
+.aa-menu{
+  position: absolute;
+  top: 9.5%;
+  right: 8%;
+  display: none;
+}
 .aa-headnav{
   position: absolute;
   top: 9.5%;
   right: 8%;
+}
+@media screen and (max-width: 900px) {
+  .aa-menu{
+    display: inline-block;
+  }
+  .aa-headnav{
+    display: none;
+  }
 }
 .aa-link{
   display: inline-block;
@@ -61,15 +88,176 @@ body{
   font-size: 20px;
   color: white;
   outline: none;
+  border: none;
   margin-top: 5%;
+}
+.aa-button:active, .aa-section2-button:active, .aa_section3-button:active{
+  transform: scale(0.99);
 }
 .aa-head-scroll{
   position: absolute;
   bottom: 4%;
   left: 49%;
 }
+
 .aa-section1{
-  height: 700px;
+  height: 650px;
   background-color:#00b2b2 ;
   display: flex;
+  align-items:center;
+  justify-content: space-evenly;
+}
+.aa-imgsection{
+  width: 80%;
+  display: block;
+  margin-left: 15%;
+}
+.aa-content_section1{
+  margin-right: 8%;
+}
+@media screen and (max-width: 1180px) {
+  .aa-h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .aa-section1{
+    flex-direction:column;
+  }
+  .aa-content_section1{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .aa-imgsection{
+    width: 50%;
+    margin-left: 21%;
+  }
+}
+
+.aa-section2{
+  height: 730px;
+  background-color:#70bfff;
+  display: flex;
+  align-items:center;
+  justify-content: space-evenly;
+  position: relative;
+}
+.aa-section2-menu{
+  display: flex;
+  flex-direction: column;
+}
+.aa-section2-button{
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  width: 400px;
+  height: 100px;
+  margin-bottom: 3%;
+  position: relative;
+  border: none;
+  box-shadow:  -3px 2px 10px 1px #44739a;
+}
+.aa-section-buttonimg{
+  position: absolute;
+  top: 25%;
+  right: 3%;
+}
+.aa-section2-span{
+  position: absolute;
+  top: 37%;
+  left: 15%;
+}
+.aa-section2_h1{
+  position: absolute;
+  top: 35%;
+}
+@media screen and (max-width: 1180px) {
+  .aa-section2_h1 {
+    left: 52%;
+  }
+  .aa-imgsection{
+    width: 73%;
+  }
+}
+@media screen and (max-width: 900px){
+  .aa-section2{
+    flex-direction:column-reverse;
+  }
+  .aa-section2-button{
+    width: 300px;
+  }
+  .aa-section2_h1{
+    top: 5%;
+    left: 25%;
+  }
+  .aa-imgsection{
+    width: 50%;
+    margin-left: 21%;
+  }
+}
+
+.aa-section3{
+  height: 1500px;
+  background-color:#ffe92f;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+}
+.aa-content_section3{
+  text-align: center;
+  width: 50%;
+}
+.aa_section3-button{
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  background-color: #5585a2;
+  width: 200px;
+  height: 55px;
+  border: none;
+}
+.aa-gridsectoin3{ 
+  display: grid;
+  grid-template-columns: 2fr 1frpx;
+  grid-template-rows: 290px 290px 405px;
+  grid-template-areas: 
+    "img1 img2 "
+    "img1 img3"
+    "img4 img5 ";
+}
+.aa-section3-img1{
+  height: 550px;
+  width: 765px;
+  background-image: url(../IMG/img1sec3.jpg);
+  background-position: center;
+  grid-area: img1;
+}
+.aa-section3-img2{
+  height: 260px;
+  width: 365px;
+  background-image: url(../IMG/img2sec3.jpg);
+  background-position: center;
+  grid-area: img2;
+}
+.aa-section3-img3{
+  height: 260px;
+  width: 365px;
+  background-image: url(../IMG/img3sec3.jpg);
+  background-position: center;
+  grid-area: img3;
+}
+.aa-section3-img4{
+  height: 395px;
+  width: 565px;
+  background-image: url(../IMG/img4sec3.jpg);
+  background-position: center;
+  grid-area: img4;
+}
+.aa-section3-img5{
+  height: 395px;
+  width: 565px;
+  background-image: url(../IMG/img5sec3.jpg);
+  background-position: center;
+  grid-area: img5;
 }
