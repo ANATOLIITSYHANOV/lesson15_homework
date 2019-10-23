@@ -180,7 +180,7 @@ body{
 }
 .aa-section2_h1{
   position: absolute;
-  top: 35%;
+  top: 45%;
 }
 @media screen and (max-width: 1180px) {
   .aa-section2_h1 {
@@ -198,8 +198,8 @@ body{
     width: 300px;
   }
   .aa-section2_h1{
-    top: 5%;
-    left: 25%;
+    top: 20%;
+    left: 30%;
   }
   .aa-imgsection{
     width: 50%;
@@ -352,6 +352,14 @@ body{
 .aa-section5-img{
   width: 30%;
 }
+@media screen and (max-width: 900px){
+  .aa-section5-gallery{
+    flex-direction: column;
+  }
+  .aa-section5-img{
+    width: 22%;
+  }
+}
 
 .aa-section6{
   height: 820px;
@@ -360,8 +368,88 @@ body{
   background-position: center;
   background-size: cover;
   background-color: #f9f8fb;
+  position: relative;
 }
 .aa-section6-content{
   text-align: center;
   padding-top: 6%;
+  margin: 0 auto 30px;
+  width: 25%;
+}
+.aa-section6-form{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 45%;
+  top: 40%;
+  left: 10%;
+}
+.aa-section6-input{
+  border: none;
+  outline: none;
+  background-color: #00c4c4;
+  width: 500px;
+  height: 50px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  opacity: 0.5;
+}
+.aa-section6-textarea{
+  height: 250px;
+  margin: 0;
+}
+.aa-section6-input::placeholder{
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  opacity: 0.5;
+}
+.aa-section6-input:focus{
+  opacity: 1;
+  border-left: 3px solid #355b82;
+}
+.aa-contact{
+  position: absolute;
+  width: 40%;
+  top: 39%;
+  right: 3%;
+}
+.aa-contact-content{
+  margin-bottom: 28px;
+}
+@media screen and (max-width: 1100px){
+  .aa-section6-input{
+    width: 350px;
+  }
+}
+@media screen and (max-width: 800px){
+  .aa-section6-input{
+    width: 250px;
+  }
+}
+
+.aa-footer{
+  height: 90px;
+  background-color: #262626;
+  position: relative;
+}
+.aa-footer-element{
+  display: inline-block;
+  color: #afafaf;
+  position: absolute;
+  top: 15%;
+}
+.aa-content_color2{
+  color: #c52a4b;
+}
+.aa-footer-element1{
+  left: 6%;
+}
+.aa-footer-element2{
+  top: 30%;
+  left: 50%;
+}
+.aa-footer-element3{
+  right: 6%;
 }
